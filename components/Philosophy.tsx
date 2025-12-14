@@ -17,23 +17,26 @@ export const Philosophy: React.FC = () => {
             </h2>
             <div className="w-12 h-[1px] bg-rr-blue"></div>
             
-            {/* Conditional Rendering for formatting support */}
-            <p className="text-gray-400 font-light leading-relaxed">
+            <p className="text-gray-400 font-normal leading-relaxed">
               {language === 'ko' ? (
                 <>
-                  <strong className="text-white font-medium">코드는 단순한 구문의 나열이 아닙니다. 그것은 가치의 인프라입니다.</strong> 저는 "커넥터 개발자"로서 단순히 함수를 작성하지 않습니다. 비즈니스 요구사항을 견고하고 확장 가능한 아키텍처로 번역합니다.
+                  <strong className="text-white font-medium">코드는 단순한 구문의 나열이 아닙니다. 그것은 가치의 인프라입니다.</strong> <br/> 저는 "커넥터 개발자"로서 단순히 함수를 작성하지 않습니다. <br/> <strong>비즈니스 요구사항을 견고하고 확장 가능한 아키텍처로 번역합니다.</strong>
                 </>
               ) : (
-                'Code is not just syntax; it is the infrastructure of value. As a "Connector Developer," I do not simply write functions. I translate business requirements into resilient, scalable architectures.'
+                <>
+                  <strong className="text-white font-medium">Code is not just syntax; it is the infrastructure of value.</strong> <br/>  As a "Connector Developer," I do not simply write functions. <strong>I translate business requirements into resilient, scalable architectures.</strong>
+                </>
               )}
             </p>
-            <p className="text-gray-400 font-light leading-relaxed">
+            <p className="text-gray-400 font-normal leading-relaxed">
               {language === 'ko' ? (
                 <>
-                  저의 접근 방식은 <strong className="text-white font-medium">기술적 탁월함과 소비자 니즈의 교차점</strong>에 집중합니다. <strong className="text-white font-medium">시스템의 "Pain Point"를 파악하고 해결</strong>함으로써, 단순히 작동하는 것을 넘어 <strong className="text-white font-medium">비즈니스를 전진</strong>시키는 소프트웨어를 구축합니다.
+                  저의 접근 방식은 <strong className="text-white font-medium">기술적 탁월함과 소비자 니즈의 교차점</strong>에 집중합니다. <br/>  <strong className="text-white font-medium">시스템의 "Pain Point"를 파악하고 해결</strong>함으로써, <br/>  단순히 작동하는 것을 넘어 <strong className="text-white font-medium">비즈니스를 전진시키는 소프트웨어를 구축</strong>합니다.
                 </>
               ) : (
-                'My approach focuses on the intersection of technical excellence and consumer needs. By identifying and resolving systemic "Pain Points," I build software that not only functions but drives the business forward.'
+                <>
+                  My approach focuses on the <strong className="text-white font-medium">intersection of technical excellence and consumer needs.</strong> By <strong className="text-white font-medium">identifying and resolving systemic "Pain Points,"</strong> I build software that not only functions but <strong className="text-white font-medium">drives the business forward.</strong>
+                </>
               )}
             </p>
           </div>
@@ -49,7 +52,7 @@ export const Philosophy: React.FC = () => {
              <div className="w-full h-[1px] bg-white/10 my-8"></div>
 
              <div className="z-10 space-y-2">
-                <span className="block text-4xl md:text-6xl font-serif text-white mb-2">AI</span>
+                <span className="block text-4xl md:text-6xl font-serif text-white mb-2">AI Contorl</span>
                 <span className="block text-xs tracking-[0.3em] text-white/40 uppercase">Native Integration</span>
              </div>
           </div>

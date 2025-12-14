@@ -6,7 +6,7 @@ const projects: ProjectItem[] = [
   {
     id: 1,
     title: 'SaaS Migration & AI Ops',
-    category: 'Lead Engineer',
+    category: 'Main Engineer',
     tech: 'Kotlin, Spring Boot, Python, LangChain, Pinecone',
     desc: {
       en: 'Led DDD-based migration to SaaS architecture and built internal AI RAG chatbot. Optimized payroll process reducing closing time by 75%.',
@@ -16,12 +16,12 @@ const projects: ProjectItem[] = [
   },
   {
     id: 2,
-    title: 'Legacy Automation & Banking',
-    category: 'Tech Lead',
+    title: 'Banking System & Automation',
+    category: 'Engineer & In-house Project Tech Lead',
     tech: 'Java, Spring Boot, JPA, Nginx, PostgreSQL',
     desc: {
-      en: 'Introduced modern stack to SI firm. Converted manual processes to automated systems via PoC. Built PMS and handled major banking projects (Kakao/KDB).',
-      ko: '• SI 회사 내 모던 스택 도입 및 테크니컬 매니징\n• 사내 비효율 개선 PoC → 수기 업무 시스템화\n• PMS 구축 및 카카오뱅크/산업은행 프로젝트 리딩'
+      en: 'Introduced modern stack to firm. Converted manual processes to automated systems via PoC. Built PMS and handled major banking projects (Kakao/KDB).',
+      ko: '• 사내 모던 스택 도입 및 테크니컬 매니징\n• 사내 비효율 개선 PoC → 수기 업무 시스템화\n• PMS 구축-리딩 및 카카오뱅크/산업은행 프로젝트 진행'
     },
     year: '2021-2024'
   }
@@ -47,7 +47,7 @@ export const Projects: React.FC = () => {
         <div className="flex justify-between items-end mb-16 reveal-on-scroll">
           <div>
             <h3 className="text-rr-blue tracking-[0.2em] text-xs mb-2">SELECTED WORKS</h3>
-            <h2 className="font-serif text-4xl text-white">CASE STUDIES</h2>
+            <h2 className="font-serif text-4xl text-white">PROJECTS</h2>
           </div>
           
           {/* Navigation Buttons */}

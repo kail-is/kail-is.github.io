@@ -1,8 +1,10 @@
+import { ReactNode } from 'react';
+
 export type Language = 'en' | 'ko';
 
 export interface MultiLangText {
-  en: string;
-  ko: string;
+  en: ReactNode;
+  ko: ReactNode;
 }
 
 export interface ServiceItem {

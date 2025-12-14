@@ -1,19 +1,19 @@
 import React, { createContext, useContext, useState, ReactNode } from 'react';
-import { Language } from '../types';
+import { Language, MultiLangText } from '../types';
 
 interface LanguageContextType {
   language: Language;
   setLanguage: (lang: Language) => void;
-  t: (text: { en: string; ko: string }) => string;
+  t: (text: MultiLangText) => ReactNode;
 }
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
 export const LanguageProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
-  const [language, setLanguage] = useState<Language>('en');
+  const [language, setLanguage] = useState<Language>('ko');
 
-  const t = (text: { en: string; ko: string }) => {
-    return language === 'ko' ? text.ko : text.en;
+  const t = (text: MultiLangText) => {
+    return language === 'en' ? text.en : text.ko;
   };
 
   return (

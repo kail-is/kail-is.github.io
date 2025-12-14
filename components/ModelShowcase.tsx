@@ -8,19 +8,19 @@ const expertise: ServiceItem[] = [
     title: 'BACKEND ARCHITECTURE',
     tagline: 'Reliability & Scale',
     description: {
-      en: 'Designing high-availability systems that serve as the backbone of your digital product. Focusing on modularity and long-term maintainability.',
-      ko: '디지털 제품의 중추 역할을 하는 고가용성 시스템을 설계합니다. 모듈화와 장기적인 유지보수성에 초점을 맞추어 안정적인 서비스를 구현합니다.'
+      en: <><strong>Designing high-availability systems</strong> that serve as the backbone of your digital product. <strong>Focusing on modularity and long-term maintainability</strong> to implement stable services.</>,
+      ko: <>웹 베이스 제품의 중추 역할을 하는 <strong>고가용성 시스템을 설계</strong>합니다. <strong>모듈화와 장기적인 유지보수성에 초점을 맞추어 안정적인 서비스를 구현</strong>합니다.</>
     },
     detail: 'Core Systems',
-    image: 'https://images.unsplash.com/photo-1558494949-ef526b01201b?q=80&w=800&auto=format&fit=crop' 
+    image: 'https://images.unsplash.com/photo-1496181133206-80ce9b88a853?q=80&w=800&auto=format&fit=crop' 
   },
   {
     id: 'ai-agents',
     title: 'AI AGENT INTEGRATION',
     tagline: 'Automation & Intelligence',
     description: {
-      en: 'Deploying autonomous LLM agents to handle complex workflows and enhance user interaction. Converting manual processes into intelligent pipelines.',
-      ko: '복잡한 워크플로우를 처리하고 사용자 상호작용을 강화하는 자율 LLM 에이전트를 배포합니다. 수동 프로세스를 지능형 파이프라인으로 전환합니다.'
+      en: <><strong>Deploying autonomous LLM agents to handle complex workflows and enhance user interaction.</strong> Converting manual processes into intelligent pipelines.</>,
+      ko: <><strong>복잡한 워크플로우를 처리하고 사용자 상호작용을 강화하는 자율 LLM 에이전트를 배포</strong>합니다. 수동 프로세스를 지능형 파이프라인으로 전환합니다.</>
     },
     detail: 'Future Tech',
     image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=800&auto=format&fit=crop'
@@ -30,8 +30,8 @@ const expertise: ServiceItem[] = [
     title: 'PAIN POINT RESOLUTION',
     tagline: 'Strategy & Execution',
     description: {
-      en: 'Translating abstract business challenges into concrete, executable software solutions. Identifying bottlenecks and engineering value.',
-      ko: '추상적인 비즈니스 과제를 실행 가능한 소프트웨어 솔루션으로 구체화합니다. 병목 현상을 파악하고 기술을 통해 실질적인 가치를 설계합니다.'
+      en: <><strong>Translating abstract business challenges into concrete, executable software solutions.</strong> Identifying bottlenecks and engineering value.</>,
+      ko: <>추상적인 비즈니스 과제를 <strong>실행 가능한 소프트웨어 솔루션으로 구체화</strong>합니다. 병목 현상을 파악하고 기술을 통해 실질적인 가치를 설계합니다.</>
     },
     detail: 'Consulting',
     image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=800&auto=format&fit=crop' 
@@ -69,7 +69,7 @@ export const ModelShowcase: React.FC = () => {
                  </div>
               </div>
               <h3 className="font-serif text-xl md:text-2xl text-white mb-2 group-hover:text-rr-blue transition-colors">{item.title}</h3>
-              <p className="text-white/40 text-sm leading-relaxed font-light mb-8 group-hover:text-white/60 transition-colors flex-grow">
+              <p className="text-white/40 text-sm leading-relaxed font-normal mb-8 group-hover:text-white/60 transition-colors flex-grow">
                 {t(item.description)}
               </p>
               <div className="mt-auto pt-4 border-t border-transparent group-hover:border-white/10 transition-all">

@@ -8,7 +8,7 @@ export const Hero: React.FC = () => {
   return (
     <section className="relative h-screen w-full flex flex-col justify-center items-center text-center z-10 px-4">
       <div className="space-y-6 animate-fade-in">
-        <h2 className="text-rr-blue tracking-[0.3em] text-xs md:text-sm uppercase font-sans animate-fade-in-up" style={{animationDelay: '0.2s'}}>
+        <h2 className="text-gray-400 tracking-[0.3em] text-xs md:text-sm uppercase font-sans animate-fade-in-up" style={{animationDelay: '0.2s'}}>
           Connector Developer
         </h2>
         <h1 className="font-serif text-5xl md:text-7xl lg:text-9xl text-white tracking-tight opacity-90 leading-tight animate-fade-in-up" style={{animationDelay: '0.4s'}}>

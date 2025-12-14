@@ -1,7 +1,8 @@
 {
   "permissions": {
     "allow": [
-      "mcp__jetbrains__list_directory_tree"
+      "mcp__jetbrains__list_directory_tree",
+      "Bash(git -C /Users/eunbin/Downloads/kyle-seo-_-connector-developer branch:*)"
     ]
   }
 }
